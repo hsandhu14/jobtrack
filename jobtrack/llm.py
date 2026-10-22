@@ -40,8 +40,11 @@ The user message contains one job posting. Return its fields as JSON matching th
 
 Rules:
 - Use null for anything the posting does not state. Never guess.
-- required_skills: concrete technical skills, languages, frameworks and tools.
-  Copy each one using the exact wording from the posting. No soft skills.
+- required_skills: named technologies only: programming languages, frameworks,
+  libraries, databases, cloud platforms and tools (e.g. "Python", "React", "AWS").
+  Copy each one using the exact wording from the posting. Exclude general concepts
+  and practices (data structures, algorithms, distributed systems, testing,
+  databases, mobile development) and soft skills.
 - deadline: YYYY-MM-DD, or null if no application deadline is stated.
 - salary_min / salary_max: annual USD as integers, or null. Convert hourly by x2080.
 - work_mode: onsite, hybrid, remote, or null."""

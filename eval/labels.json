@@ -1,0 +1,109 @@
+[
+  {"file": "01-stripe-software-engineer-new-grad.txt",
+   "company": ["Stripe"], "role": "Software Engineer, New Grad", "work_mode": [null],
+   "deadline": null, "salary": null,
+   "skills": ["Java", "Ruby", "JavaScript", "Scala", "Go"], "skills_optional": []},
+
+  {"file": "02-stripe-software-engineer-intern-summer-or-winter.txt",
+   "company": ["Stripe"], "role": "Software Engineer, Intern (Summer or Winter)", "work_mode": [null],
+   "deadline": null, "salary": null,
+   "skills": ["Ruby", "Java", "JavaScript", "Go", "Scala"], "skills_optional": []},
+
+  {"file": "03-stripe-software-engineer-early-career-immediate-start.txt",
+   "company": ["Stripe"], "role": "Software Engineer, Early Career — Immediate Start", "work_mode": [null],
+   "deadline": null, "salary": null,
+   "skills": ["Java", "Ruby", "JavaScript", "Scala", "Go"], "skills_optional": [],
+   "note": "'start before December 1, 2026' is a start-date requirement, not an application deadline"},
+
+  {"file": "04-databricks-software-engineering-intern-2027.txt",
+   "company": ["Databricks"], "role": "Software Engineering Intern (2027)", "work_mode": [null],
+   "deadline": null, "salary": [83200, 124800],
+   "skills": ["Python", "Java", "C++"], "skills_optional": [],
+   "note": "three hourly ranges ($40-$60); envelope x2080"},
+
+  {"file": "05-figma-software-engineer-intern-summer-2027.txt",
+   "company": ["Figma"], "role": "Software Engineer Intern (Summer 2027)", "work_mode": ["onsite", null],
+   "deadline": null, "salary": [114400, 114400],
+   "skills": ["C++", "JavaScript", "Python", "Java"],
+   "skills_optional": ["GitHub Copilot", "ChatGPT", "Claude"]},
+
+  {"file": "06-cloudflare-software-engineer-intern-2027-austin-tx.txt",
+   "company": ["Cloudflare"], "role": "Software Engineer Intern (2027) - Austin, TX", "work_mode": ["onsite", "hybrid"],
+   "deadline": null, "salary": null,
+   "skills": [], "skills_optional": ["TypeScript", "JavaScript", "Go", "Rust", "C", "C++", "Python"],
+   "note": "language list describes the team's stack, not a requirement; 'rolling basis' is not a deadline"},
+
+  {"file": "07-datadog-software-engineering-intern-summer.txt",
+   "company": ["Datadog"], "role": "Software Engineering Intern (Summer)", "work_mode": ["hybrid", "onsite"],
+   "deadline": null, "salary": [100000, 110000],
+   "skills": [], "skills_optional": ["Kubernetes"]},
+
+  {"file": "08-pinterest-software-engineer-intern-2027-usa.txt",
+   "company": ["Pinterest"], "role": "Software Engineer Intern 2027 (USA)", "work_mode": ["hybrid", "remote"],
+   "deadline": null, "salary": [99000, 132000],
+   "skills": ["Python", "Java", "JavaScript", "TypeScript", "Go", "C++"], "skills_optional": ["React"],
+   "note": "salary given monthly ($8,250-$11,000); x12"},
+
+  {"file": "09-pinterest-master-s-university-grad-machine-learning-engineer.txt",
+   "company": ["Pinterest"], "role": "Master's University Grad Machine Learning Engineer 2027 (USA)", "work_mode": ["hybrid"],
+   "deadline": null, "salary": [146000, 196000],
+   "skills": ["Hadoop", "Spark", "Java", "C++", "Python", "TensorFlow", "PyTorch", "MLflow"], "skills_optional": []},
+
+  {"file": "10-coinbase-software-engineer-intern.txt",
+   "company": ["Coinbase"], "role": "Software Engineer Intern", "work_mode": ["hybrid"],
+   "deadline": null, "salary": [124800, 124800],
+   "skills": [], "skills_optional": ["LibreChat", "Gemini", "Glean"]},
+
+  {"file": "11-coinbase-data-engineer-intern.txt",
+   "company": ["Coinbase"], "role": "Data Engineer Intern", "work_mode": ["hybrid"],
+   "deadline": null, "salary": [104000, 104000],
+   "skills": ["Python", "SQL", "AWS", "GCP", "Azure"], "skills_optional": []},
+
+  {"file": "12-affirm-software-engineer-early-career-nyc.txt",
+   "company": ["Affirm"], "role": "Software Engineer, Early Career (NYC)", "work_mode": ["hybrid"],
+   "deadline": null, "salary": [130000, 180000],
+   "skills": [], "skills_optional": []},
+
+  {"file": "13-roblox-2027-software-engineer-early-career.txt",
+   "company": ["Roblox"], "role": "[2027] Software Engineer, Early Career", "work_mode": ["hybrid", "onsite"],
+   "deadline": null, "salary": [153000, 153000],
+   "skills": ["C#", "Lua", "Java", "Go", "Node.js", "Ruby", "Python", "C++", "Swift"], "skills_optional": []},
+
+  {"file": "14-roblox-summer-2027-software-engineer-intern.txt",
+   "company": ["Roblox"], "role": "[Summer 2027] Software Engineer Intern", "work_mode": ["hybrid", "onsite"],
+   "deadline": null, "salary": [128960, 128960],
+   "skills": ["Go", "Node.js", "Ruby", "Python", "C++", "Lua", "Swift", "C#", "Java"], "skills_optional": []},
+
+  {"file": "15-scaleai-software-engineer-new-grad.txt",
+   "company": ["Scale", "Scale AI"], "role": "Software Engineer - New Grad", "work_mode": [null],
+   "deadline": null, "salary": [124000, 162000],
+   "skills": ["Python", "TypeScript", "React", "MongoDB"], "skills_optional": []},
+
+  {"file": "16-scaleai-software-engineering-intern-summer-2027.txt",
+   "company": ["Scale", "Scale AI"], "role": "Software Engineering Intern (Summer 2027)", "work_mode": [null, "onsite"],
+   "deadline": null, "salary": null,
+   "skills": ["Python", "TypeScript", "React", "MongoDB"], "skills_optional": []},
+
+  {"file": "17-samsara-software-engineering-internship-san-francisco.txt",
+   "company": ["Samsara"], "role": "Software Engineering Internship - San Francisco", "work_mode": ["hybrid"],
+   "deadline": "2026-11-26", "salary": [128752, 128752],
+   "skills": [], "skills_optional": ["Golang", "TypeScript", "React", "GraphQL", "React Native"],
+   "note": "deadline 'November 26th' has no year; posting is live in Oct 2026. Stack explicitly 'not required'."},
+
+  {"file": "18-lyft-software-engineer-intern-backend-summer-2027-sf.txt",
+   "company": ["Lyft"], "role": "Software Engineer Intern, Backend (Summer 2027 - SF)", "work_mode": ["hybrid"],
+   "deadline": null, "salary": [108160, 120640],
+   "skills": [], "skills_optional": []},
+
+  {"file": "19-airbnb-early-career-software-engineer-quality-platform.txt",
+   "company": ["Airbnb"], "role": "Early Career Software Engineer, Quality Platform", "work_mode": [null],
+   "deadline": null, "salary": null,
+   "skills": ["TypeScript", "JavaScript", "Java", "Kotlin", "Python", "Go", "Playwright", "Cypress",
+              "Buildkite", "Spinnaker", "Jenkins", "Git"], "skills_optional": []},
+
+  {"file": "20-palantir-forward-deployed-infrastructure-engineer-new-grad-.txt",
+   "company": ["Palantir", "Palantir Technologies"], "role": "Forward Deployed Infrastructure Engineer, New Grad - US Government",
+   "work_mode": [null, "hybrid", "onsite"],
+   "deadline": null, "salary": [135000, 145000],
+   "skills": ["Java", "Python", "Bash", "JavaScript", "Go"], "skills_optional": ["Foundry", "Apollo"]}
+]

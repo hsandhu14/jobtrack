@@ -1,0 +1,764 @@
+{
+  "summary": {
+    "model": "haiku",
+    "postings": 20,
+    "date": "2026-10-22",
+    "errors": 0,
+    "field_accuracy": {
+      "company": 1.0,
+      "role": 1.0,
+      "work_mode": 0.95,
+      "deadline": 1.0,
+      "salary": 1.0
+    },
+    "all_fields_correct": 0.95,
+    "skill_precision": 1.0,
+    "skill_recall": 0.893,
+    "claims_dropped_by_validators": 0,
+    "avg_seconds": 6.9,
+    "total_cost_usd": 0.025,
+    "wall_seconds": 36.8
+  },
+  "records": [
+    {
+      "file": "01-stripe-software-engineer-new-grad.txt",
+      "pred": {
+        "company": "Stripe",
+        "role": "Software Engineer, New Grad",
+        "location": "San Francisco, Seattle, New York",
+        "work_mode": null,
+        "skills": [],
+        "deadline": null,
+        "salary_min": null,
+        "salary_max": null
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0012519,
+      "duration_ms": 7677,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 0,
+        "fp": 0,
+        "fn": 5,
+        "false_positives": [],
+        "missed": [
+          "Java",
+          "Ruby",
+          "JavaScript",
+          "Scala",
+          "Go"
+        ]
+      }
+    },
+    {
+      "file": "02-stripe-software-engineer-intern-summer-or-winter.txt",
+      "pred": {
+        "company": "Stripe",
+        "role": "Software Engineer, Intern (Summer or Winter)",
+        "location": "San Francisco, Seattle, New York City",
+        "work_mode": null,
+        "skills": [
+          "Ruby",
+          "Java",
+          "Javascript",
+          "Go",
+          "Scala"
+        ],
+        "deadline": null,
+        "salary_min": null,
+        "salary_max": null
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0017782,
+      "duration_ms": 7217,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "03-stripe-software-engineer-early-career-immediate-start.txt",
+      "pred": {
+        "company": "Stripe",
+        "role": "Software Engineer, Early Career \u2014 Immediate Start",
+        "location": "San Francisco, Seattle, New York",
+        "work_mode": null,
+        "skills": [
+          "Java",
+          "Ruby",
+          "JavaScript",
+          "Scala",
+          "Go"
+        ],
+        "deadline": null,
+        "salary_min": null,
+        "salary_max": null
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0012839000000000001,
+      "duration_ms": 7235,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "04-databricks-software-engineering-intern-2027.txt",
+      "pred": {
+        "company": "Databricks",
+        "role": "Software Engineering Intern (2027)",
+        "location": "Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada",
+        "work_mode": null,
+        "skills": [
+          "Python",
+          "Java",
+          "C++"
+        ],
+        "deadline": null,
+        "salary_min": 107120,
+        "salary_max": 124800
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0016275,
+      "duration_ms": 8627,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "05-figma-software-engineer-intern-summer-2027.txt",
+      "pred": {
+        "company": "Figma",
+        "role": "Software Engineer Intern (Summer 2027)",
+        "location": "San Francisco, CA; New York, NY",
+        "work_mode": null,
+        "skills": [],
+        "deadline": null,
+        "salary_min": 114400,
+        "salary_max": 114400
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0014030800000000001,
+      "duration_ms": 8681,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 0,
+        "fp": 0,
+        "fn": 4,
+        "false_positives": [],
+        "missed": [
+          "C++",
+          "JavaScript",
+          "Python",
+          "Java"
+        ]
+      }
+    },
+    {
+      "file": "06-cloudflare-software-engineer-intern-2027-austin-tx.txt",
+      "pred": {
+        "company": "Cloudflare",
+        "role": "Software Engineer Intern (2027)",
+        "location": "Austin, TX",
+        "work_mode": "onsite",
+        "skills": [
+          "Typescript",
+          "Javascript",
+          "Go",
+          "Rust",
+          "C",
+          "C++",
+          "Python"
+        ],
+        "deadline": null,
+        "salary_min": null,
+        "salary_max": null
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.00121118,
+      "duration_ms": 5142,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "07-datadog-software-engineering-intern-summer.txt",
+      "pred": {
+        "company": "Datadog",
+        "role": "Software Engineering Intern (Summer)",
+        "location": "Boston, Massachusetts, USA; New York, New York, USA",
+        "work_mode": "hybrid",
+        "skills": [
+          "Kubernetes"
+        ],
+        "deadline": null,
+        "salary_min": 100000,
+        "salary_max": 110000
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0013139800000000002,
+      "duration_ms": 7830,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "08-pinterest-software-engineer-intern-2027-usa.txt",
+      "pred": {
+        "company": "Pinterest",
+        "role": "Software Engineer Intern 2027 (USA)",
+        "location": "San Francisco, CA, US; Remote, US",
+        "work_mode": null,
+        "skills": [
+          "Python",
+          "Java",
+          "JavaScript/TypeScript",
+          "Go",
+          "C++",
+          "React"
+        ],
+        "deadline": null,
+        "salary_min": 99000,
+        "salary_max": 132000
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0012947800000000001,
+      "duration_ms": 7931,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": false,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "09-pinterest-master-s-university-grad-machine-learning-engineer.txt",
+      "pred": {
+        "company": "Pinterest",
+        "role": "Master's University Grad Machine Learning Engineer 2027 (USA)",
+        "location": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US",
+        "work_mode": "hybrid",
+        "skills": [
+          "Hadoop",
+          "Spark",
+          "Java",
+          "C++",
+          "Python",
+          "Tensorflow",
+          "Pytorch",
+          "MLFlow"
+        ],
+        "deadline": null,
+        "salary_min": 146000,
+        "salary_max": 196000
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.00131518,
+      "duration_ms": 6715,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "10-coinbase-software-engineer-intern.txt",
+      "pred": {
+        "company": "Coinbase",
+        "role": "Software Engineer Intern",
+        "location": "San Francisco, CA",
+        "work_mode": "hybrid",
+        "skills": [
+          "LibreChat",
+          "Gemini",
+          "Glean"
+        ],
+        "deadline": null,
+        "salary_min": 124800,
+        "salary_max": 124800
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.00121368,
+      "duration_ms": 6706,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "11-coinbase-data-engineer-intern.txt",
+      "pred": {
+        "company": "Coinbase",
+        "role": "Data Engineer Intern",
+        "location": "San Francisco, CA",
+        "work_mode": "hybrid",
+        "skills": [
+          "Python",
+          "SQL",
+          "AWS",
+          "GCP",
+          "Azure"
+        ],
+        "deadline": null,
+        "salary_min": 103950,
+        "salary_max": 103950
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.00080558,
+      "duration_ms": 5285,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "12-affirm-software-engineer-early-career-nyc.txt",
+      "pred": {
+        "company": "Affirm",
+        "role": "Software Engineer, Early Career (NYC)",
+        "location": "New York, New York, United States",
+        "work_mode": "hybrid",
+        "skills": [],
+        "deadline": null,
+        "salary_min": 130000,
+        "salary_max": 180000
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.00089318,
+      "duration_ms": 5806,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "13-roblox-2027-software-engineer-early-career.txt",
+      "pred": {
+        "company": "Roblox",
+        "role": "[2027] Software Engineer, Early Career",
+        "location": "San Mateo, CA, United States",
+        "work_mode": "onsite",
+        "skills": [
+          "C#",
+          "Lua",
+          "Java",
+          "Go",
+          "Node.js",
+          "Ruby",
+          "Python",
+          "C++",
+          "Swift"
+        ],
+        "deadline": null,
+        "salary_min": 153000,
+        "salary_max": 153000
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.00105508,
+      "duration_ms": 6663,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "14-roblox-summer-2027-software-engineer-intern.txt",
+      "pred": {
+        "company": "Roblox",
+        "role": "Software Engineer Intern",
+        "location": "San Mateo, CA, United States",
+        "work_mode": "onsite",
+        "skills": [
+          "Go",
+          "Node.js",
+          "Ruby",
+          "Python",
+          "C++",
+          "Lua",
+          "Swift",
+          "C#",
+          "Java"
+        ],
+        "deadline": null,
+        "salary_min": 128960,
+        "salary_max": 128960
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.00121988,
+      "duration_ms": 7633,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "15-scaleai-software-engineer-new-grad.txt",
+      "pred": {
+        "company": "Scale",
+        "role": "Software Engineer - New Grad",
+        "location": "San Francisco, CA",
+        "work_mode": null,
+        "skills": [
+          "Python",
+          "Typescript",
+          "React",
+          "MongoDB"
+        ],
+        "deadline": null,
+        "salary_min": 124000,
+        "salary_max": 162000
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.00117548,
+      "duration_ms": 5727,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "16-scaleai-software-engineering-intern-summer-2027.txt",
+      "pred": {
+        "company": "Scale AI",
+        "role": "Software Engineering Intern (Summer 2027)",
+        "location": "San Francisco, CA",
+        "work_mode": null,
+        "skills": [
+          "Python",
+          "Typescript",
+          "React",
+          "MongoDB"
+        ],
+        "deadline": null,
+        "salary_min": null,
+        "salary_max": null
+      },
+      "issues": [
+        "company 'Scale AI' not found in posting; check it"
+      ],
+      "error": null,
+      "cost_usd": 0.00105578,
+      "duration_ms": 5755,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "17-samsara-software-engineering-internship-san-francisco.txt",
+      "pred": {
+        "company": "Samsara",
+        "role": "Software Engineering Internship",
+        "location": "San Francisco, CA",
+        "work_mode": "hybrid",
+        "skills": [
+          "Golang",
+          "TypeScript",
+          "React",
+          "GraphQL",
+          "React Native"
+        ],
+        "deadline": "2026-11-26",
+        "salary_min": 128752,
+        "salary_max": 128752
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0015437800000000002,
+      "duration_ms": 7124,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "18-lyft-software-engineer-intern-backend-summer-2027-sf.txt",
+      "pred": {
+        "company": "Lyft",
+        "role": "Software Engineer Intern, Backend (Summer 2027 - SF)",
+        "location": "San Francisco, CA",
+        "work_mode": "hybrid",
+        "skills": [],
+        "deadline": null,
+        "salary_min": 108160,
+        "salary_max": 120640
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0008978800000000001,
+      "duration_ms": 5825,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "19-airbnb-early-career-software-engineer-quality-platform.txt",
+      "pred": {
+        "company": "Airbnb",
+        "role": "Early Career Software Engineer, Quality Platform",
+        "location": "Sao Paulo - Brazil",
+        "work_mode": null,
+        "skills": [
+          "TypeScript",
+          "JavaScript",
+          "Java",
+          "Kotlin",
+          "Python",
+          "Go",
+          "Playwright",
+          "Cypress",
+          "Buildkite",
+          "Spinnaker",
+          "Jenkins",
+          "Git"
+        ],
+        "deadline": null,
+        "salary_min": null,
+        "salary_max": null
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.0012606800000000001,
+      "duration_ms": 6969,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 12,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    },
+    {
+      "file": "20-palantir-forward-deployed-infrastructure-engineer-new-grad-.txt",
+      "pred": {
+        "company": "Palantir",
+        "role": "Forward Deployed Infrastructure Engineer, New Grad - US Government",
+        "location": "Palo Alto, CA",
+        "work_mode": null,
+        "skills": [
+          "Java",
+          "Python",
+          "Bash",
+          "JavaScript",
+          "Go"
+        ],
+        "deadline": null,
+        "salary_min": 135000,
+        "salary_max": 145000
+      },
+      "issues": [],
+      "error": null,
+      "cost_usd": 0.00144018,
+      "duration_ms": 7856,
+      "score": {
+        "fields": {
+          "company": true,
+          "role": true,
+          "work_mode": true,
+          "deadline": true,
+          "salary": true
+        },
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "false_positives": [],
+        "missed": []
+      }
+    }
+  ]
+}

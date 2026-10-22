@@ -13,6 +13,8 @@ A Python CLI job tracker that calls Claude Code headless (`claude -p`) for two n
 ## Commands
 - Tests: `python -m unittest` (no model calls; keep it that way)
 - Run: `python -m jobtrack <cmd>`; use `JOBTRACK_DB=data/test.db` for experiments
+- Eval: `python -m jobtrack eval [--model haiku]` (about 35s, 20 model calls). Run it after any change to `EXTRACT_SYSTEM`, `EXTRACT_SCHEMA` or `check_extraction`, and record the before and after numbers in LOG.md and eval/README.md.
+- Never edit `eval/labels.json` to match model output. If a label is wrong, fix it and say why in the log.
 
 ## Log
 Append to `LOG.md` whenever a plan is made or behavior changes. Give the date, what changed and why.

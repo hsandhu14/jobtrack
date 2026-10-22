@@ -1,8 +1,14 @@
 # jobtrack
 
+[![tests](https://github.com/hsandhu14/jobtrack/actions/workflows/tests.yml/badge.svg)](https://github.com/hsandhu14/jobtrack/actions/workflows/tests.yml)
+
 A command-line job application tracker. Claude reads each job posting, pulls out its details, and scores how well your resume fits. Plain Python code checks every claim the model makes before anything is saved.
 
 It runs Claude Code in headless mode (`claude -p`), so it needs no API key, and it uses only the Python standard library.
+
+**Measured on 20 real job postings:** company, role, deadline and salary were 100% correct, and 19 of 20 postings had all five fields right. Skill precision was 100% and recall 99%. See [eval/](eval/README.md).
+
+![Dashboard](docs/dashboard.png)
 
 ```
 $ python -m jobtrack add samples/posting1.txt
@@ -37,7 +43,7 @@ Requires Python 3.10+ and [Claude Code](https://claude.com/claude-code) logged i
 
 ```bash
 cp resume.example.md resume.md   # then put your real resume in it (gitignored)
-python -m unittest               # 20 tests, no model calls
+python -m unittest               # 32 tests, no model calls
 ```
 
 ## Commands
@@ -51,11 +57,16 @@ python -m unittest               # 20 tests, no model calls
 | `status <id> <status> [--note]` | Move a job to `saved` / `applied` / `interview` / `offer` / `rejected` / `ghosted` / `withdrawn` |
 | `stale [--days 14]` | Jobs you applied to that haven't changed status since |
 | `stats` | Model calls, latency and how many model claims the validators dropped |
-| `dashboard [--out file]` | Write a static HTML dashboard |
+| `eval [--model m]` | Score extraction against 20 hand-labeled real postings ([details](eval/README.md)) |
+| `dashboard [--out file]` | Write a static HTML dashboard: stat tiles, a pipeline bar, a strip of target companies, and a card for each job showing its company logo, fit score ring and skill chips (matched vs. missing) |
 
 Environment variables: `JOBTRACK_DB` (default `data/jobtrack.db`), `JOBTRACK_MODEL` (default `sonnet`), `JOBTRACK_CLAUDE`.
 
 Many job boards render their pages with JavaScript, so `add <url>` may find little text. In that case, paste the posting into a file and run `add file.txt --url <url>`.
+
+### Dashboard logos
+
+No logo images are stored in this repo. `logos.py` maps company names to their domains (about 50 well-known employers are built in), or reads the domain from the posting URL when that URL isn't a job board. The dashboard then loads each icon from Google's favicon service when you open the page. Any company without a domain, or whose icon fails to load, gets a colored monogram instead. Companies in the "Target companies" strip link to their careers pages and show a checkmark once you've added a job there. To change the list, create a `targets.txt` file with one company per line.
 
 ## Layout
 
@@ -66,8 +77,11 @@ jobtrack/
   db.py         SQLite schema and queries
   fetch.py      file/URL/stdin → plain text
   dashboard.py  static HTML report
+  logos.py      company → domain/careers lookup and monogram fallback
+  evaluate.py   scores extraction against eval/labels.json
   cli.py        argparse commands
-tests/          unit tests for validators and response parsing
+tests/          unit tests for validators, scoring and logo lookup (run in CI)
+eval/           20 real postings, hand labels, results per model
 samples/        example postings
 LOG.md          development log of plans and changes
 ```

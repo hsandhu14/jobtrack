@@ -17,7 +17,7 @@ def _salary(job):
     lo, hi = job["salary_min"], job["salary_max"]
     if lo is None and hi is None:
         return "-"
-    if lo is None or hi is None:
+    if lo is None or hi is None or lo == hi:
         return f"${lo if lo is not None else hi:,}"
     return f"${lo:,}-${hi:,}"
 
@@ -145,6 +145,33 @@ def cmd_stats(conn, args):
               f"claims={r['claims'] or 0} dropped={r['dropped'] or 0} ({rate})")
 
 
+def cmd_eval(conn, args):
+    from . import evaluate
+    print(f"Running extraction on labeled postings with {args.model or llm.MODEL}...")
+    s, records, path = evaluate.run(args.model, args.limit, args.workers)
+    for r in records:
+        bad = [f for f, ok in r["score"]["fields"].items() if not ok]
+        extra = r["score"]["false_positives"]
+        line = f"  {'ok ' if not bad and not extra and not r['score']['missed'] else 'ERR' if r['error'] else '~  '} {r['file']}"
+        if r["error"]:
+            line += f"  error: {r['error']}"
+        if bad:
+            line += f"  wrong: {', '.join(bad)}"
+        if r["score"]["missed"]:
+            line += f"  missed: {', '.join(r['score']['missed'])}"
+        if extra:
+            line += f"  extra: {', '.join(extra)}"
+        print(line)
+    print(f"\nmodel={s['model']} postings={s['postings']} errors={s['errors']}")
+    for f, acc in s["field_accuracy"].items():
+        print(f"  {f:<10} {acc:.0%}")
+    print(f"  all fields {s['all_fields_correct']:.0%}")
+    print(f"  skills     precision {s['skill_precision']:.0%}  recall {s['skill_recall']:.0%}")
+    print(f"  dropped by validators: {s['claims_dropped_by_validators']}   "
+          f"avg {s['avg_seconds']}s/call   wall {s['wall_seconds']}s")
+    print(f"wrote {path}")
+
+
 def cmd_dashboard(conn, args):
     path = dashboard.write(conn, args.out)
     print(f"wrote {path}")
@@ -184,6 +211,12 @@ def main(argv=None):
     sl.set_defaults(fn=cmd_stale)
 
     sub.add_parser("stats", help="model call and drop-rate stats").set_defaults(fn=cmd_stats)
+
+    ev = sub.add_parser("eval", help="score extraction against hand-labeled postings in eval/")
+    ev.add_argument("--model", help="model alias, e.g. sonnet or haiku")
+    ev.add_argument("--limit", type=int)
+    ev.add_argument("--workers", type=int, default=4)
+    ev.set_defaults(fn=cmd_eval)
 
     d = sub.add_parser("dashboard", help="write an HTML dashboard")
     d.add_argument("--out", default="dashboard.html")
