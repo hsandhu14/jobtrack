@@ -1,0 +1,25 @@
+Northwind Labs — Software Engineer I, Backend Platform
+Seattle, WA · Hybrid (3 days in office)
+
+About the role
+Northwind Labs builds logistics software used by 400+ regional grocery chains. Our Backend
+Platform team owns the APIs that route millions of deliveries each week. We're looking for an
+early-career engineer who wants to ship production code from week one.
+
+What you'll do
+- Design, build and maintain REST APIs in Python (FastAPI)
+- Write and tune queries against PostgreSQL
+- Containerize services with Docker and deploy them to AWS
+- Write unit and integration tests with pytest
+- Participate in code review and on-call rotation (after onboarding)
+
+What we're looking for
+- BS in Computer Science or equivalent experience (new grads welcome)
+- Proficiency in Python
+- Experience with SQL databases, ideally PostgreSQL
+- Familiarity with Git and CI/CD pipelines
+- Nice to have: Kubernetes, Redis, TypeScript
+
+Compensation: $115,000 – $140,000 base salary, plus equity and benefits.
+
+Applications close December 1, 2026.

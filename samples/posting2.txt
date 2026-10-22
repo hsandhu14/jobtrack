@@ -1,0 +1,20 @@
+Contoso Health is hiring!
+
+Position: Associate Frontend Developer
+Location: Remote (US)
+
+Join our patient-portal team. You'll build accessible, responsive interfaces that help
+patients book appointments and view lab results.
+
+Responsibilities:
+* Build UI components in React and TypeScript
+* Collaborate with designers in Figma
+* Write tests with Jest and React Testing Library
+* Improve accessibility (WCAG 2.1 AA)
+
+Requirements:
+* 0-2 years of experience with JavaScript and React
+* Understanding of HTML, CSS and REST APIs
+* Experience with Git
+
+We review applications on a rolling basis.

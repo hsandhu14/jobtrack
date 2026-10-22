@@ -1,0 +1,5 @@
+data/
+resume.md
+dashboard.html
+__pycache__/
+*.pyc
